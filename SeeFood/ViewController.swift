@@ -8,8 +8,6 @@
 import UIKit
 import CoreML
 import Vision
-import MobileCoreServices
-import PhotosUI
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -21,7 +19,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
         
         imagePicker.delegate = self
-        
         
         imagePicker.sourceType = .camera
         imagePicker.allowsEditing = false
@@ -43,7 +40,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func detect(image: CIImage) {
-        guard let model = try? VNCoreMLModel(for: MobileNetV2().model) else {
+        let modelConfiguration = MLModelConfiguration()
+        guard let model = try? VNCoreMLModel(for: MobileNetV2(configuration: .init()).model) else {
             fatalError("Loading CoreML model failed")
         }
         

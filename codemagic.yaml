@@ -7,7 +7,7 @@ workflows:
           -scheme "SeeFood" \
           -archivePath archive.xcarchive \
           CODE_SIGN_IDENTITY="" \
-          CODE_SIGNING_REQUIRED=NO \
+          CODE_SIGNING_REQUIRED=NO
           cd archive.xcarchive/Products/Applications/
           mkdir Payload
           mv SeeFood.app Payload

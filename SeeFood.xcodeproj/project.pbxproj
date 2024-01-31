@@ -14,6 +14,7 @@
 		0797BEEB2B59631100FB754C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0797BEE92B59631100FB754C /* Main.storyboard */; };
 		0797BEED2B59631200FB754C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0797BEEC2B59631200FB754C /* Assets.xcassets */; };
 		0797BEF02B59631300FB754C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0797BEEE2B59631300FB754C /* LaunchScreen.storyboard */; };
+		341A836DE751B3CFDB6AD648 /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 341A87B99BCEAF2AEDD0F613 /* codemagic.yaml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0797BEEC2B59631200FB754C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0797BEEF2B59631300FB754C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0797BEF12B59631300FB754C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		341A87B99BCEAF2AEDD0F613 /* codemagic.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			children = (
 				0797BEE22B59631100FB754C /* SeeFood */,
 				0797BEE12B59631100FB754C /* Products */,
+				341A87B99BCEAF2AEDD0F613 /* codemagic.yaml */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +134,7 @@
 				0797BEF02B59631300FB754C /* LaunchScreen.storyboard in Resources */,
 				0797BEED2B59631200FB754C /* Assets.xcassets in Resources */,
 				0797BEEB2B59631100FB754C /* Main.storyboard in Resources */,
+				341A836DE751B3CFDB6AD648 /* codemagic.yaml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,24 @@
+workflows:
+  ios:
+    scripts:
+      - name: "Build iOS"
+        script: |
+          xcodebuild archive \
+          -scheme "SeeFood" \
+          -archivePath archive.xcarchive \
+          CODE_SIGN_IDENTITY="" \
+          CODE_SIGNING_REQUIRED=NO \
+          cd archive.xcarchive/Products/Applications/
+          mkdir Payload
+          mv SeeFood.app Payload
+          zip -r Payload.zip Payload
+          mv Payload.zip SeeFood.ipa
+    artifacts:
+      - /Users/builder/clone/archive.xcarchive/Products/Applications/*.ipa
+    publishing:
+      email:
+        recipients:
+          - amourakora2001@gmail.com
+    triggering:
+      events:
+        - push
